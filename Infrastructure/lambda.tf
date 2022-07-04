@@ -6,7 +6,7 @@ resource "aws_lambda_function" "executaemr" {
    memory_size   = 128
    timeout       = 30
 
-   ce_code_hash = filebase64sha256("lambda_function_payload.zip")
+   # ce_code_hash = filebase64sha256("lambda_function_payload.zip")
 
    runtime = "python3.8"
 
